@@ -19,7 +19,7 @@
 
     "autoload": {
         "psr-4": {
-            "NanoFrameworkPlugins\\ViewEngine\\Php": "libs/"
+            "NanoFrameworkPlugins\\ViewEngine\\Php\\": "libs/"
         }
     }
 }
