@@ -1,0 +1,25 @@
+{
+    "name": "sbnet/nano-framework-plugin-phpviewengine",
+    "type": "library",
+    "description": "The Nano Framework PHP view engine",
+    "homepage": "http://www.nano-framework.com",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Stephane BRUN",
+            "email": "stephane@sbnet.fr",
+            "homepage": "http://www.sbnet.fr"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.3.3",
+        "sbnet/nano-framework": "dev-master"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "NanoFrameworkPlugins\\ViewEngine\\Php": "libs/"
+        }
+    }
+}
