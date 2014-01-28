@@ -104,6 +104,9 @@ class Engine extends Kernel\Event\Observable implements Kernel\View\iViewEngine
 
         if(is_file($view_file))
         {
+
+            $layout_file = $GLOBALS['env']['DIR_VIEWS'].'layouts/'.$this->layout.'.php';
+
             // We start buffering the output
             ob_start();
 
@@ -113,8 +116,6 @@ class Engine extends Kernel\Event\Observable implements Kernel\View\iViewEngine
             ob_clean();
 
             // Then put it in the layout if any
-            $layout_file = $GLOBALS['env']['DIR_VIEWS'].'layouts/'.$this->layout.'.php';
-
             if(is_file($layout_file) and $no_layout==false)
             {
                 include($layout_file);
